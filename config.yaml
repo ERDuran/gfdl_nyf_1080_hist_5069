@@ -1,0 +1,25 @@
+# PBS flags
+queue: normal
+project: e14
+walltime: 05:00:00
+ncpus: 960
+mem: 1600GB
+jobname: hist5069
+
+collate_walltime: 3:00:00
+collate_mem: 8GB
+npernode: 12
+collate_queue: express
+collate_flags: -n4 -z -m -r
+
+# Model config
+model: mom
+shortpath: /short/e14
+exe: /short/e14/erd561/mom/bin/fms_MOM_SIS_pub2017.x
+input: nyf_cmip5
+collate: true
+
+# Misc
+stacksize: unlimited
+
+runlog: true
